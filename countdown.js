@@ -34,3 +34,5 @@ console.log(countdown(goal));
 const counter = countdown(goal);
 const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`;
 console.log(time);
+
+document.getElementById('timer').textContent = time;
