@@ -2,9 +2,14 @@
 
 function countdown(due){
   const now = new Date();
+  // 以下を編集
   const rest = due.getTime() - now.getTime();
-  const sec = Math.floor(rest/1000);
-  return sec;
+  const sec = Math.floor(rest/1000) % 60;
+  const min = Math.floor(rest/1000/60) % 60;
+  const hours = Math.floor(rest/1000/60/60) % 24;
+  const count = [hours, min, sec];
+
+  return count;
 }
 
 let goal = new Date();
