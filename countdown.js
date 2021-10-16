@@ -46,4 +46,9 @@ function recalc() {
   // ※次の一行を忘れずに追加！！
   refresh();
 }
+function refresh() {
+  setTimeout(recalc, 1000);
+}
+
+recalc();
 
