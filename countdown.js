@@ -36,3 +36,14 @@ const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`;
 console.log(time);
 
 document.getElementById('timer').textContent = time;
+
+function recalc() {
+ console.log(countdown(goal));
+  const counter = countdown(goal);
+  const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`
+  console.log(time);
+  document.getElementById('timer').textContent = time;
+  // ※次の一行を忘れずに追加！！
+  refresh();
+}
+
