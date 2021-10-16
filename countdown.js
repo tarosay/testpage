@@ -13,3 +13,14 @@ goal.setMinutes(59);
 goal.setSeconds(59);
 
 console.log(countdown(goal));
+// さっき追加した行
+console.log(goal)
+// ここまで
+goal.setHours(23);
+goal.setMinutes(59);
+goal.setSeconds(59);
+// さらに追加
+console.log(goal)
+// ここまで
+
+console.log(countdown(goal));
