@@ -6,3 +6,10 @@ function countdown(due){
   const sec = Math.floor(rest/1000);
   return sec;
 }
+
+let goal = new Date();
+goal.setHours(23);
+goal.setMinutes(59);
+goal.setSeconds(59);
+
+console.log(countdown(goal));
